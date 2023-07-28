@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_','_', app()->getLocale()) }}">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>{{ config('app.name', 'laravel') }}</title>
 
@@ -14,7 +14,7 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="conrainer">
+            <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'laravel') }}
 
@@ -26,7 +26,7 @@
                 data-bs-target="#navbarSupporteContent"
                 aria-controls="navbarSupporteContent"
                 aria-expanded="false"
-                aria-label="{{__('Toggle navegacion')}}">
+                aria-label="{{__('Toggle navigation')}}">
                     <span class="navbar-toggler-icon"></span>
 
                 </button>
@@ -53,6 +53,7 @@
                             @endif
                         @else
                             <li class="nav-item dropdown"...>
+
 
                         @endguest
 
