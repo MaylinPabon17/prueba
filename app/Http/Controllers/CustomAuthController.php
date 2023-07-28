@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use  Illuminate\Http\Request;
 use Hash;
 use Session;
 use App\Models\User;
@@ -50,7 +50,7 @@ class CustomAuthController extends Controller
         $user = $this->create($data);
 
         Auth::login($user);
-        return redirect("doshboard")->withSuccess('Te has registrado satisfactorimente!');
+        return redirect("dashboard")->withSuccess('Te has registrado satisfactorimente!');
 
     }
 
